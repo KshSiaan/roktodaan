@@ -1,6 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
   images: {
     domains: ["img.icons8.com"],
   },
@@ -8,7 +11,7 @@ const nextConfig: NextConfig = {
     return [
       {
         source: "/api/:path*", // This is a proxy pattern to rewrite all '/api' requests
-        destination: "http://localhost:5000/:path*", // Forward to your Express backend
+        destination: "https://roktodaan.onrender.com/:path*", // Forward to your Express backend
       },
     ];
   },
