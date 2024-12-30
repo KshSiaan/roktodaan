@@ -1,0 +1,40 @@
+<Card className="p-6 bg-white dark:bg-zinc-800 shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <div className="flex items-center justify-between mb-4">
+            <div>
+              <h2 className="text-xl font-semibold text-zinc-800 dark:text-zinc-100">
+                Emergency Request
+              </h2>
+              <Badge variant="destructive" className="mt-1 bg-[#C62828]">
+                Critical
+              </Badge>
+            </div>
+            <DropletIcon className="w-12 h-12 text-[#C62828]" />
+          </div>
+          <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-4">
+            Urgent need for{" "}
+            <span className="font-bold text-[#C62828]">AB-</span> blood type
+          </p>
+          <div className="flex items-center mb-2">
+            <MapPin className="w-4 h-4 mr-2 text-zinc-500" />
+            <span className="text-sm text-zinc-600 dark:text-zinc-400">
+              St. Mary&apos;s Hospital, San Francisco
+            </span>
+          </div>
+          <div className="flex items-center mb-4">
+            <Phone className="w-4 h-4 mr-2 text-zinc-500" />
+            <span className="text-sm text-zinc-600 dark:text-zinc-400">
+              +1 (555) 987-6543
+            </span>
+          </div>
+          <div className="flex space-x-2">
+            <Button className="flex-1 bg-[#C62828] hover:bg-[#B71C1C] text-white">
+              Respond Now
+            </Button>
+            <Button
+              variant="outline"
+              className="flex-1 border-[#C62828] text-[#C62828] hover:bg-green-800 hover:border-green-950 hover:text-white"
+            >
+              Share
+            </Button>
+          </div>
+        </Card>
